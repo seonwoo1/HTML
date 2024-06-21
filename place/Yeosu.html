@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여수 관광지</title>
+    <link rel="stylesheet" href="../place css/Yeosu.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=22896623e3db731c8b7f0baaa943097b"></script>
+</head>
+<body>
+    <div class="info">
+        <h2>여수 관광지 소개</h2>
+    </div>
+    <div class="main">
+        <ul class="list">
+            <li class="place" style="background: url('https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQKWp6pio8FNklBxPNjeTh90wpTltYot_GSMmCDdsNl_DJODU-a3kBrT1ROq7L8mgC_TZN0OHzEVx-iOpuF3s3wGQo9UYzpguIo-K6OgA') center center/ cover no-repeat;">
+                <h4 style="color:#ffffff">여수 해상케이블카</h4>
+                <div class="links">
+                    <a href="http://m.yeosucablecar.com/m/state/" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    여수 해상케이블카는 여수시의 바다를 가로짓는 케이블카로 2014년 12월부터 운행을 시작하였다. 오동도 입구 자산공원에서부터 돌산도 돌산공원을 잇는다. 아시아에서는 홍콩, 싱가포르, 베트남에 이어 네번째, 대한민국에서는 첫번째로 설치된 해상 케이블카이다.2017년 현재 크리스탈 케빈 10대와 일반 케빈 40대, 총 50대의 케이블카가 운영되고 있다. 크리스탈 케빈은 바닥을 강화유리로 만들어 스릴감과 조망권을 즐길 수 있는 특징이 있다.<br><br><br><br><br>
+                </h5>
+            </li>
+            <li id="map"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map'),
+            mapOption = {
+                center: new kakao.maps.LatLng(34.73058155565307, 127.74153311029426),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(34.73058155565307, 127.74153311029426); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <div class="sub">
+        <ul class="list">
+            <li class="place" style="background: url('https://cdn.namdonews.com/news/photo/202103/601300_220947_509.jpg')">
+                <h4 id="boat" style="color:#ffffff">이순신 광장</h4>
+                <div class="links">
+                    <a id="boat" href="https://www.grandculture.net/yeosu/toc/GC01303018" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    이순신 광장 조성사업은 2006년 12월부터 2010년 4월까지, 3년 5개월에 걸쳐 사업을 추진하였다. 위치는 여수시 중앙동 400번지 일원에, 13,989㎡ 면적으로 460억 원의 재원을 투입하였다. 2009년 2월까지 보상과 건축물 철거를 완료하고, 2009년 4월에 공사를 착공하여, 2010년 4월에 공사를 마치고 개장하였다. 2014년 26억원을 들여 이순신 광장에 거북선 조형물을 설치하였다. 주요 시설로는 전망대, 무대공연장, 분수, 광장, 기념의 벽, 지하주차장 등으로 구성되어 있다. 2016년부터 이순신 광장과 장군도 앞 해상에서 ‘여수밤바다 불꽃 축제’가 열리고 있다. 이순신 광장 인근에는 여수시 특산물을 구입할 수 있는 수산물시장, 건어물시장 등이 있다.</h5>
+            </li>
+            <li id="map2"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map2'),
+            mapOption = {
+                center: new kakao.maps.LatLng(34.739441727926376, 127.73605150884806),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(34.739441727926376, 127.73605150884806); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <div class="sub">
+        <ul class="list">
+            <li class="place" style="background: url('https://m.aquaplanet.co.kr/Upload/Main/tip/image_name_20171130164582820.jpg')">
+                <h4 style="color:#ffffff">아쿠아플라넷 여수</h4>
+                <div class="links">
+                    <a href="https://m.aquaplanet.co.kr/yeosu/index.do" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    세계에서 두 번째로, 아시아에서는 가장 큰 규모의 돔형 아쿠아리움. 63 씨월드의 약 5배가 조금 넘는 규모로, 수도권에서의 아쿠아리움 중 가장 큰 아쿠아플라넷 일산보다도 약간 더 크다. 2012년 5월 12일 2012 여수 엑스포 개막에 맞추어 개장했으며, 여수엑스포 당시 엑스포 부속시설이었다. 한화 아쿠아플라넷 수족관 중에서는, 아쿠아플라넷 63에 이어 두 번째로 개장했다.대한민국에서 흰고래를 보유한 단 셋뿐인 아쿠아리움 중 하나.마스코트는 흰고래,건물 내에 '뮤지엄오브컬러 전시관'과 '5D영상관'이라는 시설도 부속되어 있다. 5D영상관은 360° 회전하는 의자와, 3방면에 설치된 스크린을 통해 현실인 듯한 해저탐험을 할 수 있다.</h5>
+            </li>
+            <li id="map3"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map3'),
+            mapOption = {
+                center: new kakao.maps.LatLng(34.74622178779078, 127.74873288723659),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(34.74622178779078, 127.74873288723659); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <footer class="footer">
+        <div class="info-2">
+            <ul>
+                <li>소프트웨어 개발 실습1</li>
+                <li>기말고사 과제</li>
+            </ul>
+            <ul>
+                <li>김선우</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

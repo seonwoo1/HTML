@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광주 관광지</title>
+    <link rel="stylesheet" href="../place css/Gwangju.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=22896623e3db731c8b7f0baaa943097b"></script>
+</head>
+<body>
+    <div class="info">
+        <h2>광주 관광지 소개</h2>
+    </div>
+    <div class="main">
+        <ul class="list">
+            <li class="place" style="background: url('https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT7XWA7c16rIoaFtn9pQZr0OIyShoNED5M29UhMPXmIIXuvlOwe7NUKm7zHYKsRMgtcuPok5-OV5z1lYpkySoJo4eTmJ6T3SnAfqH46HYY') center center/ cover no-repeat;">
+                <h4 style="color:white">무등산국립공원</h4>
+                <div class="links">
+                    <a href="https://www.knps.or.kr/front/portal/visit/visitCourseMain.do?parkId=122000&menuNo=7020090" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    광주·전남의 진산(鎭山)이자 호남정맥의 중심 산줄기로 2013년 3월, 우리나라의 21번째 국립공원으로 지정되었다. 전체 면적은 75.425㎢이다. 해발 1,187m의 무등산은 ‘비할 데 없이 높고 큰 산’ 또는 ‘등급을 매길 수 없을 정도의 고귀한 산’ 이라는 의미를 지니고 있다.
+                    최고봉인 천왕봉을 중심으로 서석대·입석대·광석대 등 수직 절리상의 암석이 석책을 두른 듯 치솟아 장관을 이룬다. 봄에는 진달래, 여름에는 참나리, 가을에는 단풍과 억새, 겨울에는 설경 등 사계절 생태경관이 뚜렷하며, 멸종위기야생생물 수달·하늘다람쥐·으름난초 등이 서식하는 우수한 생태계를 자랑한다.</h5>
+            </li>
+            <li id="map"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map'),
+            mapOption = {
+                center: new kakao.maps.LatLng(35.133129051575956, 126.99046248257241),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(35.133129051575956, 126.99046248257241); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <div class="sub">
+        <ul class="list">
+            <li class="place" style="background: url('https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5dd62744-7064-4764-b1b3-470d6485b578')">
+                <h4 style="color:#ffffff">광주호 호수생태원</h4>
+                <div class="links">
+                    <a href="http://gjarchive.kr/t_02023/8411" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">광주호 호수생태원은 2006. 3. 20 에 개원했고, 생물의 서식처를 제공하고 종 다양성증대를 통한 생태계보전에 기여하며 자연생태계의 생물들을 관찰 체험할 수 있도록하여 시민들에게 건강한 생태공간을 제공하고 환경의 중요성을 일깨워 주기 위한 공간입니다. 면적은 184,948㎡ 이고
+                조성목적은 무등산과 광주호 주변 시가문화권 정비와 광주호 수질개선과 향토자생생물 종 다양성 증대, 생태계 보전 및 호수변 경관개선,도시민의 휴식장소 제공, 청소년을 위한 자연관찰 학습장 활용, 친환경적 생태관광자원 조성 입니다.
+                </h5>
+            </li>
+            <li id="map2"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map2'),
+            mapOption = {
+                center: new kakao.maps.LatLng(35.18420497674736, 127.00115004845811),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(35.18420497674736, 127.00115004845811); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <div class="sub">
+        <ul class="list">
+            <li class="place" style="background: url('https://www.mdilbo.com/lib/thumb.html?type=file&w=700&src=202208/07/20220807155532608728.jpg')">
+                <h4 style="color:#ffffff">국립광주박물관</h4>
+                <div class="links">
+                    <a href="https://gwangju.museum.go.kr/" target="_blank" style="color:rgb(139, 214, 243)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    국립광주박물관은 1976년 수중발굴이 시작된 신안해저문화유산을 비롯한 호남지역의 문화유산을 수집·보관하고, 지역의 역사와 문화를 소개하기 위해 1978년 12월 6일 개관하였습니다. 호남지역의 첫 박물관이자 광복 이후 우리 손으로 지은 최초의 지역 국립박물관이라는 자부심이 있습니다.국립광주박물관은 국보·보물 등의 지정문화유산을 포함하여 160,000여 점의 소장품을 보존·관리하며 성설전시와 특별전시를 통해 다양한 주제로 관람객들이 문화를 향유할 수 있도록 노력하고 있습니다.</h5>
+            </li>
+            <li id="map3"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map3'),
+            mapOption = {
+                center: new kakao.maps.LatLng(35.188821842058154, 126.88283941958393),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(35.188821842058154, 126.88283941958393); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <footer class="footer">
+        <div class="info-2">
+            <ul>
+                <li>소프트웨어 개발 실습1</li>
+                <li>기말고사 과제</li>
+            </ul>
+            <ul>
+                <li>김선우</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

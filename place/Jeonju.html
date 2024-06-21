@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전주 관광지</title>
+    <link rel="stylesheet" href="../place css/Jeonju.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=22896623e3db731c8b7f0baaa943097b"></script>
+</head>
+<body>
+    <div class="info">
+        <h2>전주 관광지 소개</h2>
+    </div>
+    <div class="main">
+        <ul class="list">
+            <li class="place" style="background: url('https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSqqthl2GgI6WLBHRew1TGWdTTqBRUOJSRYi06ISEVxsaSUlFtLxpfb1FRV2TBuDM4FGM4PhuqmQlrUS1YxStb0wB3jlsT7U1DPgfOq3g') center center/ cover no-repeat;">
+                <h4 style="color:#ffffff">전주한옥마을</h4>
+                <div class="links">
+                    <a href="https://hanok.jeonju.go.kr/" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    전주한옥마을은 전주 풍남동 일대에 700여 채의 한옥이 군락을 이루고 있는 국내 최대 규모의 전통 한옥촌이며, 전국 유일의 도심 한옥군입니다. 1910년 조성되기 시작한 우리나라 근대 주거문화 발달과정의 중요한 공간으로, 경기전, 오목대, 향교 등 중요 문화재와 20여개의 문화시설이 산재되어 있으며, 한옥, 한식, 한지, 한소리, 한복, 한방 등 韓스타일이 집약된 대한민국 대표 여행지입니다.<br><br><br>
+                </h5>
+            </li>
+            <li id="map"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map'),
+            mapOption = {
+                center: new kakao.maps.LatLng(35.814819354656336, 127.15255486857235),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(35.814819354656336, 127.15255486857235); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <div class="sub">
+        <ul class="list">
+            <li class="place" style="background: url('https://www.jjn.co.kr/news/photo/202109/834598_152950_2139.jpg')">
+                <h4 style="color:#ffffff">전주남부시장</h4>
+                <div class="links">
+                    <a href="http://www.bbsj.kr/sijang/market.php?sij_idx=233" target="_blank" style="color:rgb(155, 217, 241)" onclick="alert('공식 홈페이지가 없으므로 소개 홈페이지로 넘어갑니다.')">공식 홈페이지 ></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    전북 전주 남부시장은 오랜 전통이 살아있는 전통시장으로 산지 직송의 농수축산물을 주로 취급하고있다. 전통시장의 멋을 고스란히 담고 있어 전통시장의 모든 것을 체험해 보는 것은 물론 다양한 문화를 즐겨볼 수 있으며 문화체험시설까지 완비되어 있기 때문에 알찬 전통시장 체험과 유익한 문화생활을 즐길 수 있는 시장이다.<br><br><br><br>
+                </h5>
+            </li>
+            <li id="map2"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map2'),
+            mapOption = {
+                center: new kakao.maps.LatLng(35.812978678037204, 127.14701061855133),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(35.812978678037204, 127.14701061855133); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <div class="sub">
+        <ul class="list">
+            <li class="place" style="background: url('https://mblogthumb-phinf.pstatic.net/MjAyMDA3MDdfMjc5/MDAxNTk0MTMwMDg0NzUy.7JWgXRAOhssQxLsaOZF-ZL8torJHktW3RuKuDydFDs8g.FgbY8c7LpMyh7L8b9lcWVLX5SNsMkWQLqs-TrZ-bmn8g.JPEG.kiej38/SE-14069799-b8a7-4b37-8a9b-1d8cdd489b7c.jpg?type=w800')">
+                <h4 id="Jeonju" style="color:#ffffff">전주덕진공원</h4>
+                <div class="links">
+                    <a id="Jeonju" href="https://tour.jeonju.go.kr/board/view.jeonju?menuCd=DOM_000000101006002000&boardId=BBS_0000003&contentsSid=1&paging=ok&startPage=1&dataSid=9772" target="_blank" style="color:rgb(155, 217, 241)">공식 홈페이지></a>
+                </div>
+            </li>
+            <li class="place2" style="background-color: rgb(243, 243, 243);">
+                <h2 style="color: black;">소개</h2>
+                <h5 style="color:black">
+                    덕진공원은 기존의 노후된 시설과 건물을 대대적으로 정비해 지금의 새로운 모습을 갖추게 되었다. 옛 연화정 건물은 전주의 정체성과 한국의 멋을 담은 고즈넉한 전통한옥의 형태를 갖춘 연화정도서관이 되었다. 이곳은 도서관 공간인 연화당, 문화공간이자 쉼터의 역할을 하는 연화루로 구성되어 있다. 호수의 전경을 한눈에 담을 수 있는 곳에 위치한 포토존은 한옥 안에서 드넓은 수면 위를 가득 채운 연꽃을 배경으로 추억을 남길 수 있는 인생 사진 명소로 손꼽히며 새로 정비된 연화교와 연화정도서관 일대는 야간경관 시설도 멋지게 조성되어 있어 아름다운 야경 명소로 각광받고 있다.</h5>
+            </li>
+            <li id="map3"></li>
+        </ul>
+    </div>
+    <script>
+        var mapContainer = document.getElementById('map3'),
+            mapOption = {
+                center: new kakao.maps.LatLng(35.8474875517327, 127.12102461543232),
+                level: 3
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        var markerPosition  = new kakao.maps.LatLng(35.8474875517327, 127.12102461543232); 
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    </script>
+    <footer class="footer">
+        <div class="info-2">
+            <ul>
+                <li>소프트웨어 개발 실습1</li>
+                <li>기말고사 과제</li>
+            </ul>
+            <ul>
+                <li>김선우</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
